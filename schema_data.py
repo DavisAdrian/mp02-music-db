@@ -129,14 +129,14 @@ def seed_database(conn):
     # Choose a genre theme your team agrees on (hip-hop, jazz, Latin, K-pop, etc.)
     # TODO: replace placeholder data with your team's chosen artists
 
-   artists = [
-    (1, "Bad Bunny", "Reggaeton", "San Juan"),
-    (2, "Rihanna", "Pop", "Barbados"),
-    (3, "The Weeknd", "R&B", "Toronto"),
-    (4, "Doja Cat", "Pop/Rap", "Los Angeles"),
-    (5, "Travis Scott", "Hip-Hop", "Houston"),
-    (6, "Mariah Carey", "Pop/R&B", "Huntington")
-]
+    artists = [
+        (1, "Bad Bunny", "Reggaeton", "San Juan"),
+        (2, "Rihanna", "Pop", "Barbados"),
+        (3, "The Weeknd", "R&B", "Toronto"),
+        (4, "Doja Cat", "Pop/Rap", "Los Angeles"),
+        (5, "Travis Scott", "Hip-Hop", "Houston"),
+        (6, "Mariah Carey", "Pop/R&B", "Huntington")
+    ]
 
     conn.executemany(
         "INSERT OR IGNORE INTO Artist VALUES (?, ?, ?, ?)",
@@ -184,12 +184,12 @@ def seed_database(conn):
     # Columns: playlist_id, playlist_name, owner_name
     # TODO: replace placeholder data with your team's chosen playlists (minimum 4)
 
-   playlists = [
-    (1, "Gym Grind", "David"),
-    (2, "R&B Relax", "Emily"),
-    (3, "Summer Vibes", "Benjamin"),
-    (4, "Late Night", "Sarah")
-]
+    playlists = [
+        (1, "Gym Grind", "David"),
+        (2, "R&B Relax", "Emily"),
+        (3, "Summer Vibes", "Benjamin"),
+        (4, "Late Night", "Sarah")
+    ]
 
     conn.executemany(
         "INSERT OR IGNORE INTO Playlist VALUES (?, ?, ?)",
