@@ -1,4 +1,5 @@
 """
+# Author 2:Sarah Sabio
 queries.py
 ==========
 CIS 3120 · MP02 — SQL and Database
